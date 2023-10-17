@@ -25,7 +25,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: var(--color-background);
+  background-color: var(--color-grey-4);
   font-size: 17px;
   color: var(--color-grey-4);
 }
@@ -125,7 +125,75 @@ textarea {
 .header .header-content .h-img img {
   width: 400px;
   height: 400px;
+  object-fit: cover;
   border-radius: 50%;
+  -webkit-box-shadow: 3px 11px 30px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 11px 30px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 11px 30px 3px rgba(0, 0, 0, 0.75);
+}
+
+.section {
+  background-color: var(--color-grey-0);
+  margin-left: 390px;
+  padding: 4rem 5rem;
+}
+
+.sec-about .about-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.sec-about .about-content .left-about {
+  width: 94%;
+  height: 550px;
+}
+.sec-about .about-content .left-about img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--trans);
+  -webkit-box-shadow: 3px 11px 30px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 11px 30px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 11px 30px 3px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+}
+.sec-about .about-content .left-about img:hover {
+  filter: grayscale(100);
+}
+.sec-about .about-content .right-about h4 {
+  font-size: 3.5rem;
+}
+.sec-about .about-content .right-about h4 span {
+  color: var(--color-green-dark);
+  position: relative;
+}
+.sec-about .about-content .right-about p {
+  margin: 1.5rem 0;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 500;
+  color: var(--color-white);
+  background-color: var(--color-grey-5);
+  padding: 1rem 2rem;
+  border-radius: 7px;
+  transition: var(--trans);
+}
+.btn:hover {
+  background-color: var(--color-green-dark);
+}
+
+.main-title {
+  text-align: center;
+  margin: 3rem 0;
+}
+.main-title span {
+  text-align: center;
+  display: inline-block;
+}
+.main-title h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
 }
 
 .mouse {
