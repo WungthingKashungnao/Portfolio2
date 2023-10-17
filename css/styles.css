@@ -87,4 +87,79 @@ textarea {
 .sidebar .navigation .nav-items .nav-item a:hover {
   color: var(--color-green-dark);
   letter-spacing: 3px;
+}
+
+.header {
+  background-color: var(--color-grey-0);
+  height: 100vh;
+  margin-left: 390px;
+  position: relative;
+  overflow: hidden;
+}
+.header .header-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+.header .header-content .h-text h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  transition: var(--trans);
+}
+.header .header-content .h-text h2:hover {
+  color: var(--color-green-dark);
+  letter-spacing: 3px;
+}
+.header .header-content .h-text p {
+  margin: 2rem 0;
+  font-size: 19px;
+  font-weight: 500;
+  text-align: center;
+}
+.header .header-content .h-img {
+  display: flex;
+  justify-content: center;
+}
+.header .header-content .h-img img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+
+.mouse {
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+  transform: translate(-50%, -50%);
+  width: 2rem;
+  height: 2.8rem;
+  border-radius: 20px;
+  border: 2px solid var(--color-grey-2);
+}
+.mouse .dot {
+  position: absolute;
+  left: 50%;
+  top: 6px;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-grey-4);
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  animation: dot 1s infinite ease-in-out;
+}
+@keyframes dot {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  10% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, 25px);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
 }/*# sourceMappingURL=styles.css.map */
