@@ -23,11 +23,29 @@
   --trans: all 0.4s ease-in-out;
 }
 
+/*scroll bar size*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-green-light);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(315deg, #378b29 25%, #27ae60 45%, #74d680 74%, #378b29 100%);
+  border-radius: 10px;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--color-grey-4);
   font-size: 17px;
   color: var(--color-grey-4);
+  max-width: 1920px;
+  margin: auto;
 }
 
 a,
@@ -290,6 +308,26 @@ textarea {
   width: 14px;
   height: 14px;
   border-radius: 50%;
+}
+
+.sec-skills .skills {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.sec-skills .skills .skill-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: var(--trans);
+}
+.sec-skills .skills .skill-icon i {
+  font-size: 3rem;
+}
+.sec-skills .skills .skill-icon:hover {
+  transform: translateY(-20px);
 }
 
 .btn {

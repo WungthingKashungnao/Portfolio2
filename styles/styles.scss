@@ -24,12 +24,35 @@
   --color-white: #fff;
   --trans: all 0.4s ease-in-out;
 }
+/*scroll bar size*/
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-green-light);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  // background: linear-gradient(to bottom, #27ae60, #6bbe92);
+  background: linear-gradient(
+    315deg,
+    #378b29 25%,
+    #27ae60 45%,
+    #74d680 74%,
+    #378b29 100%
+  );
+  border-radius: 10px;
+}
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--color-grey-4);
   font-size: 17px;
   color: var(--color-grey-4);
+  max-width: 1920px;
+  margin: auto;
 }
 a,
 button,
@@ -51,6 +74,7 @@ textarea {
   position: fixed;
   border-right: 1px solid var(--color-grey-1);
   transition: var(--trans);
+
   //   navigation start
   .navigation {
     height: 100%;
@@ -325,6 +349,30 @@ textarea {
   }
 }
 // srvices section end
+
+// skills secction start
+.sec-skills {
+  .skills {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
+    .skill-icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: var(--trans);
+      i {
+        font-size: 3rem;
+      }
+      &:hover {
+        transform: translateY(-20px);
+      }
+    }
+  }
+}
+// skills section end
 
 // independent components start
 .btn {
