@@ -194,6 +194,74 @@ textarea {
   }
 }
 
+// projects section start
+.sec-projects {
+  .projects-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    .p-title {
+      font-size: 3rem;
+      margin-bottom: 6rem;
+    }
+    .projects {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-gap: 2rem;
+      .project {
+        position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 7px;
+        }
+        .text {
+          position: absolute;
+          bottom: 5%;
+          left: 5%;
+          h5 {
+            width: max-content;
+            letter-spacing: 3px;
+            font-size: 2rem;
+            background-color: var(--color-green-dark);
+            padding: 0.2rem 0.4rem;
+            border-radius: 7px;
+            color: var(--color-white);
+          }
+          p {
+            font-weight: 500;
+            color: var(--color-grey-0);
+            margin-bottom: 0.5rem;
+            margin-top: 0.5rem;
+          }
+          .project-btn {
+            border-radius: initial;
+            padding: 0.8rem 2rem;
+            background-color: rgba(255, 255, 255, 0.35);
+            color: var(--color-white);
+            transition: var(--trans);
+            position: relative;
+            &:hover {
+              background-color: rgba(255, 255, 255, 0.66);
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: -6px;
+              background-color: var(--color-white);
+              width: 100%;
+              height: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// projects section end
+
 // independent components start
 .btn {
   display: inline-block;
