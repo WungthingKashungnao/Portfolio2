@@ -374,6 +374,62 @@ textarea {
 }
 // skills section end
 
+// contact section start
+.sec-contact {
+  .contact-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    .map {
+      width: 100%;
+      height: 100%;
+      iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 7px;
+      }
+    }
+    .contact-me {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .c-text {
+      margin-bottom: 3rem;
+    }
+
+    .form {
+      .input-container {
+        position: relative;
+        margin: 2rem 0;
+        input,
+        textarea {
+          width: 100%;
+          font-family: inherit;
+          font-size: inherit;
+          padding: 0.5rem 1rem;
+          border: 1px solid var(--color-grey-1);
+          background: var(--color-grey-0);
+          outline: none;
+          resize: none;
+          border-radius: 7px;
+        }
+        label {
+          position: absolute;
+          left: 25px;
+          top: -15px;
+          background-color: var(--color-grey-0);
+          padding: 0.1rem 0.4rem;
+          border-radius: 7px;
+        }
+      }
+      button {
+        cursor: pointer;
+      }
+    }
+  }
+}
+// contact section end
+
 // independent components start
 .btn {
   display: inline-block;
