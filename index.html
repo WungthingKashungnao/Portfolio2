@@ -20,7 +20,7 @@
   </head>
   <body>
     <!-- side bar start -->
-    <section class="sidebar">
+    <section class="sidebar" id="sidebar">
       <nav class="navigation">
         <!-- logo start -->
         <div class="logo">
@@ -31,22 +31,34 @@
         <!-- menu items start -->
         <ul class="nav-items">
           <li class="nav-item">
-            <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="#home"
+              ><i class="fa-solid fa-house"></i> <span>Home</span></a
+            >
           </li>
           <li class="nav-item">
-            <a href="#home"><i class="fa-solid fa-user"></i> About</a>
+            <a href="#about"
+              ><i class="fa-solid fa-user"></i> <span>About</span></a
+            >
           </li>
           <li class="nav-item">
-            <a href="#home"> <i class="fa-solid fa-briefcase"></i> Projects</a>
+            <a href="#projects">
+              <i class="fa-solid fa-briefcase"></i> <span>Projects</span></a
+            >
           </li>
           <li class="nav-item">
-            <a href="#home"><i class="fa-solid fa-gears"></i>Services</a>
+            <a href="#services"
+              ><i class="fa-solid fa-gears"></i> <span>Services</span></a
+            >
           </li>
           <li class="nav-item">
-            <a href="#home"><i class="fa-solid fa-code"></i> Skills</a>
+            <a href="#skills"
+              ><i class="fa-solid fa-code"></i> <span>Skills</span></a
+            >
           </li>
           <li class="nav-item">
-            <a href="#home"><i class="fa-solid fa-envelope"></i> Contact</a>
+            <a href="#contact"
+              ><i class="fa-solid fa-envelope"></i> <span>Contact</span></a
+            >
           </li>
         </ul>
         <!-- menu items end -->
@@ -61,7 +73,7 @@
     <!-- main start -->
     <main>
       <!-- header start -->
-      <header class="header">
+      <header class="header" id="home">
         <div class="header-content">
           <div class="h-text">
             <h2>Software Engineer</h2>
@@ -74,23 +86,23 @@
             <img src="img/profile.jpg" alt="" />
           </div>
         </div>
-        <div class="mouse">
+        <!-- <div class="mouse">
           <div class="dot"></div>
-        </div>
+        </div> -->
       </header>
       <!-- header end -->
 
       <!-- about start -->
-      <section class="section sec-about">
+      <section class="section sec-about" id="about">
         <div class="main-title">
           <span>Information about me</span>
           <h3>About Me</h3>
         </div>
         <!-- about content start -->
         <div class="about-content">
-          <div class="left-about">
+          <!-- <div class="left-about">
             <img src="img/about.jpg" alt="" />
-          </div>
+          </div> -->
           <div class="right-about">
             <h4>My name is <span>Wungthing Kashungnao</span></h4>
             <p>
@@ -110,7 +122,7 @@
       <!-- about end -->
 
       <!-- projects section start -->
-      <section class="section sec-projects">
+      <section class="section sec-projects" id="projects">
         <div class="main-title">
           <span>My Recent Projects</span>
           <h3>My Portfolio</h3>
@@ -130,7 +142,7 @@
                 />
                 <div class="text">
                   <h5>Youtube</h5>
-                  <p>A clone of youtube with similar features</p>
+                  <p>Youtube clone</p>
                   <a
                     href="https://github.com/WungthingKashungnao/Youtube-Clone"
                     class="btn project-btn"
@@ -172,7 +184,7 @@
                 />
                 <div class="text">
                   <h5>Hotel API</h5>
-                  <p>Backend API for hotel with crud features</p>
+                  <p>API with crud features</p>
                   <a
                     href="https://github.com/WungthingKashungnao/Hotel-api"
                     class="btn project-btn"
@@ -208,7 +220,7 @@
       <!-- projects section end -->
 
       <!-- services section start -->
-      <section class="section sec-services">
+      <section class="section sec-services" id="services">
         <div class="main-title">
           <span>what I am expert in </span>
           <h3>My Services</h3>
@@ -247,7 +259,7 @@
       <!-- services section end -->
 
       <!-- skill section start -->
-      <section class="section sec-skills">
+      <section class="section sec-skills" id="skills">
         <div class="main-title">
           <span>My expertise</span>
           <h3>Skills</h3>
@@ -294,7 +306,7 @@
       <!-- skill section end -->
 
       <!-- contact section start -->
-      <section class="section sec-contact">
+      <section class="section sec-contact" id="contact">
         <div class="main-title">
           <span>Get in Touch</span>
           <h3>CONTACT ME</h3>
@@ -318,6 +330,8 @@
           >
             <h3 class="contact-me">Send me a message!</h3>
             <p class="c-text">
+              <span class="email-id">wungthingkashungnao123@gmail.com</span>
+              <br />
               Please fill out the form on this section to contact me <br />
               or call me here 8259053027
             </p>
