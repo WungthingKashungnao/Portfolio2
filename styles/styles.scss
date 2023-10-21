@@ -251,6 +251,32 @@ textarea {
       }
     }
     // left about end
+
+    // social  start
+
+    .social {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 1rem 0;
+      gap: 2rem;
+      flex-wrap: wrap;
+      .social-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: var(--trans);
+        i {
+          font-size: 3rem;
+        }
+        &:hover {
+          transform: translateY(-20px);
+        }
+      }
+    }
+
+    // social end
+
     // right about start
     .right-about {
       h4 {
@@ -647,8 +673,8 @@ textarea {
     .header-content {
       .h-img {
         img {
-          height: 300px;
-          width: 300px;
+          height: 250px;
+          width: 250px;
         }
       }
     }
@@ -704,6 +730,36 @@ textarea {
           textarea {
             width: 90%;
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .sidebar {
+    height: 12vh;
+    .navigation {
+      .nav-items {
+        a {
+          margin: 0 2rem;
+          i {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .header {
+    .header-content {
+      .h-text h2 {
+        font-size: 2rem;
+      }
+      .h-img {
+        img {
+          height: 220px;
+          width: 220px;
         }
       }
     }
